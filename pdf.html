@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>简历</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: calc(100 * 1 / 1440 * 1vw);
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100%;
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+            font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+            font-size: 14px;
+            color: #303133;
+            line-height: 1.5;
+        }
+
+        h1 {
+            font-size: 25px;
+            letter-spacing: 3px;
+        }
+
+        h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            font-size: 18px;
+        }
+
+        li {
+            margin-left: 2em;
+        }
+
+        strong {
+            min-width: 60px;
+            margin-right: 1em;
+        }
+
+        hr{
+            border: none;
+            border-bottom: 1px solid #DCDFE6;
+        }
+
+        header {
+            position: relative;
+            text-align: center;
+            padding-bottom: 10px;
+            line-height: 1.7;
+        }
+
+        header img {
+            position: absolute;
+            right: 0;
+            height: 134px;
+            border: 1px solid #DCDFE6;
+        }
+
+        .card {
+            padding: 10px 0;
+        }
+
+        .sec-card {
+            margin-left: 2em;
+        }
+
+        .trd-card {
+            margin-left: 2em;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .responsibility{
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="container">
+        <header>
+            <img src="./images/photo.png">
+            <h1>秦誉锋</h1>
+            <span>176-8863-1877</span>
+            <br />
+            <span>chun_yufung@qq.com</span>
+            <br />
+            <span>github.com/chunyufung</span>
+            <br /><span>东莞市长安镇</span>
+        </header>
+        <hr />
+        <div class="card">
+            <h2>教育背景</h2>
+            <ul class="grid">
+                <li><strong>毕业院校:</strong>华南农业大学</li>
+                <li><strong>毕业时间:</strong>2018.06</li>
+                <li><strong>专业:</strong>信息与计算科学</li>
+                <li><strong>学位:</strong>理学学士</li>
+                <li><strong>课程:</strong>WEB设计、数据结构、算法、运筹学</li>
+            </ul>
+        </div>
+        <hr />
+        <div class="card">
+            <h2>工作相关</h2>
+            <ul class="grid">
+                <li><strong>求职意向:</strong>WEB前端工程师</li>
+                <li><strong>工作经验:</strong>1年</li>
+            </ul>
+        </div>
+        <hr />
+        <div class="card">
+            <h2>技能相关</h2>
+            <div class="grid">
+                <div class="sec-card">
+                    <h3>前端技能</h3>
+                    <ul>
+                        <li><strong>基础:</strong>HTML5, CSS3, JavaScript(ES6)</li>
+                        <li><strong>框架:</strong>Vue, jQuery, ejs, element-ui, iview</li>
+                        <li><strong>工具:</strong>Git, webpack, Sourcetree</li>
+                    </ul>
+                </div>
+                <div class="sec-card">
+                    <h3>语言技能</h3>
+                    <ul>
+                        <li>
+                            <strong>英语:</strong>CET4
+                            <ul class="grid">
+                                <li>能阅读英文文档</li>
+                                <li>能用英语交流</li>
+                            </ul>
+                        </li>
+                        <li><strong>母语:</strong>普通话、粤语</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="card">
+            <h2>工作经历</h2>
+            <ul class="grid">
+                <li><strong>2019.03</strong><span>深圳市变设龙信息科技有限公司</span>
+                </li>
+                <li><strong>2017.07</strong><span>深圳市望升信息技术有限公司</span>
+                </li>
+            </ul>
+        </div>
+        <hr />
+        <div class="card">
+            <h2>项目经历</h2>
+            <div class="sec-card">
+                <h3>变设龙在线设计平台</h3>
+                <li><strong>概述:</strong>在Vue下开发一个在线设计平台, 实现用户在线挑选模板并编辑的需求, 和在线智能抠图的需求</li>
+                <div class="trd-card">
+                    <h4>文章发布平台</h4>
+                    <ul>
+                        <li><strong>项目介绍:</strong>开发一个人专门发布文章的平台, 实现宣传设计平台的需求</li>
+                        <li class="responsibility"><strong>负责内容:</strong>
+                            <ul>
+                                <li>平台布局与动画的设计与实现</li>
+                                <li>实现用户登录验证功能</li>
+                                <li>与后端对接实现首页动态更新并分页的功能</li>
+                                <li>将平台链接生成sitemap并发布到各大站长平台</li>
+                                <li>实现自适应移动端布局</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="trd-card">
+                    <h4>后台数据管理平台</h4>
+                    <ul>
+                        <li><strong>项目介绍:</strong>开发一个管理整个项目数据的平台</li>
+                        <li class="responsibility"><strong>负责内容:</strong>
+                            <ul>
+                                <li>与后端对接, 将用户搜索的关键词记录在表格中, 实现按使用时间、模板和素材筛选、精确的关键词查询</li>
+                                <li>与后端对接, 将用户使用模板的场景记录在表格中, 并实现按使用时间筛选</li>
+                                <li>平台样式布局的后期维护</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid">
+                <div class="trd-card">
+                    <h4>微信小程序</h4>
+                    <ul>
+                        <li><strong>项目介绍:</strong>开发设计平台的小程序版本</li>
+                        <li><strong>负责内容:</strong> 实现微信绑定验证功能
+                        </li>
+                    </ul>
+                </div>
+                <div class="trd-card">
+                    <h4>在线设计工作台</h4>
+                    <ul>
+                        <li><strong>项目介绍:</strong>开发工作台供用户进行在线设计</li>
+                        <li><strong>负责内容:</strong> 平台样式布局的后期维护</li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
